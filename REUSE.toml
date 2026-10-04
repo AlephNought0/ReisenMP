@@ -1,0 +1,7 @@
+version = 1
+
+[[annotations]]
+path = [".editorconfig", ".env.example", ".envrc", ".gitattributes", ".gitignore", "README.md", "flake.lock", "flake.nix", "ReisenMP.csproj"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 AlephNought0"
+SPDX-License-Identifier = "CC0-1.0"
