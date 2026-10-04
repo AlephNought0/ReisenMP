@@ -6,7 +6,12 @@
     <Nullable>enable</Nullable>
     <LangVersion>12.0</LangVersion>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="src/**/*.cs" />
+  </ItemGroup>
 
   <ItemGroup>
     <Reference Include="0Harmony">
