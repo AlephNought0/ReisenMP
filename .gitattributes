@@ -1,0 +1,7 @@
+# Detect text files automatically, store them with LF, check them out with LF
+* text=auto eol=lf
+
+# Never touch binary files
+*.dll    binary
+*.png    binary
+*.jpg    binary
