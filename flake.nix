@@ -10,6 +10,7 @@
     devShells.x86_64-linux.default = pkgs.mkShell {
       nativeBuildInputs = with pkgs.buildPackages; [
         dotnet-sdk
+        reuse
       ];
 
       /*
