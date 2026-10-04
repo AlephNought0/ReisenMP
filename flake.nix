@@ -9,7 +9,7 @@
   in {
     devShells.x86_64-linux.default = pkgs.mkShell {
       nativeBuildInputs = with pkgs.buildPackages; [
-        dotnet-sdk
+        dotnet-sdk_10
         reuse
       ];
 
@@ -18,7 +18,7 @@
       ];
       */
 
-      DOTNET_ROOT = "${pkgs.dotnet-sdk}/share/dotnet";
+      DOTNET_ROOT = "${pkgs.dotnet-sdk_10}/share/dotnet";
     };
   };
 }

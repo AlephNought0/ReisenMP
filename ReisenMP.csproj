@@ -36,6 +36,17 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameDir)/CasualtiesUnknown_Data/Managed/UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="CopyDebugFile" AfterTargets="AfterBuild" Condition="'$(Configuration)' == 'Debug'">
+    <Copy SourceFiles="$(TargetDir)ReisenMP.dll" DestinationFolder="$(GameDir)/BepInEx/plugins" />
+  </Target>
+
   <Target Name="GameDir exists" BeforeTargets="BeforeBuild">
     <Error Condition="!Exists('$(GameDir)')"
          Text="GameDir is not set or wrong: '$(GameDir)'. Point it at the root of the game." />

@@ -6,7 +6,11 @@
 
 namespace ReisenMP;
 
-public class ReisenMPPlugin
+[BepInEx.BepInPlugin("io.github.alephnought0.reisenmp", "ReisenMP", "0.1.0")]
+public class ReisenMPPlugin : BepInEx.BaseUnityPlugin
 {
-
+    private void Awake()
+    {
+        Logger.LogInfo("Current Garbage Collector is incremental: " + UnityEngine.Scripting.GarbageCollector.isIncremental);
+    }
 }
